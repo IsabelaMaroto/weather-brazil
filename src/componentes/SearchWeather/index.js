@@ -109,9 +109,7 @@ export function Search() {
                         <button onClick={() => weatherSearch()}>Pesquisar</button>
                     </div>
                 </div>
-                <div>
-                    <Cards/>
-                </div>
+                <Cards/>
             </Pesquisa>
             <Exibe>
             {

@@ -78,9 +78,9 @@ export function Cards() {
         setResultadoCapitais([])
 
         listaCapitais.map(async (cidade) => {
-            const apiCapital = await fetch(`http://api.weatherapi.com/v1/current.json?key=5405e52bdcab47d5bcc150940231001&q=${cidade}&aqi=yes&lang=pt`)
+            const apiCapital = await fetch(`https://api.weatherapi.com/v1/current.json?key=5405e52bdcab47d5bcc150940231001&q=${cidade}&aqi=yes&lang=pt`)
             const respostaCapital = await apiCapital.json()
-            /* console.log(respostaCapital) */
+            console.log(respostaCapital)
             setResultadoCapitais(ResultadoCapitais => [...ResultadoCapitais, respostaCapital])
         })
 
